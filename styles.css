@@ -1,0 +1,166 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url('imagenes/fondo-mandala.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 0;
+    height: 100vh; /* Hace que el body tenga la altura completa de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flyer-container {
+    text-align: center;
+    background-color: rgba(197, 228, 246, 0.8); /* Fondo semitransparente */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.curved-title {
+    font-size: 36px;
+    fill: #e71cad; /* Cambia el color del texto */
+}
+
+p {
+    font-size: 24px;
+    color: #e71cad;
+    margin: 10px 0; /* Espaciado vertical para los párrafos */
+}
+
+.highlight {
+    font-weight: bold;
+    color: #06ee34; /* Color diferente para CONECTARTE */
+    font-size: 28px; /* Tamaño de fuente diferente */
+    font-style: italic; /* Estilo cursivo */
+}
+
+.arte {
+    font-weight: bold;
+    color: #ff0a0a; /* Color diferente para ARTE */
+    font-size: 32px; /* Tamaño de fuente diferente */
+    font-style: italic; /* Estilo cursivo */
+}
+
+.subrayado {
+    text-decoration: underline; /* Subraya solo el texto */
+}
+
+.corner-image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: transparent; /* Asegura que no haya un fondo detrás de las imágenes */
+    border: none; /* Asegura que no haya un borde alrededor de las imágenes */
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+/* Media Queries */
+
+/* Para tablets y dispositivos con pantallas de hasta 768px */
+@media (max-width: 768px) {
+    .corner-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .top-left {
+        top: 50px; /* Ajusta este valor para mover la imagen más abajo en tablets */
+    }
+
+    .top-right {
+        top: 50px; /* Ajusta este valor para mover la imagen más abajo en tablets */
+    }
+
+    .bottom-left {
+        bottom: -10px; /* Mueve la imagen más abajo */
+    }
+
+    .bottom-right {
+        bottom: -10px; /* Mueve la imagen más abajo */
+    }
+
+    .flyer-container {
+        padding: 15px;
+    }
+
+    .curved-title {
+        font-size: 38px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .highlight {
+        font-size: 24px;
+    }
+
+    .arte {
+        font-size: 28px;
+    }
+}
+
+/* Para móviles con pantallas de hasta 480px */
+@media (max-width: 480px) {
+    .corner-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .top-left {
+        top: 50px; /* Ajusta este valor para mover la imagen más abajo en móviles */
+    }
+
+    .top-right {
+        top: 50px; /* Ajusta este valor para mover la imagen más abajo en móviles */
+    }
+
+    .bottom-left {
+        bottom: -20px; /* Mueve la imagen aún más abajo */
+    }
+
+    .bottom-right {
+        bottom: -20px; /* Mueve la imagen aún más abajo */
+    }
+
+    .flyer-container {
+        padding: 10px;
+    }
+
+    .curved-title {
+        font-size: 38px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .highlight {
+        font-size: 20px;
+    }
+
+    .arte {
+        font-size: 24px;
+    }
+}
